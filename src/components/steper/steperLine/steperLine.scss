@@ -8,6 +8,10 @@
     position: relative;
     margin: 40px 0 63px 0;
 
+    @include breakpoint("max-xl") {
+      margin: 25px 0;
+    }
+
     @include breakpoint("max-sm") {
      margin: 24px 30px 63px 30px; 
     }

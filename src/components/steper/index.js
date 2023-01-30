@@ -6,6 +6,7 @@ import FirstStep from "./firstStep";
 import SecStep from "./secStep";
 import ThreeSteper from "./threeSteper";
 import ForthStep from "./forthStep";
+import VielenDank from "./vielenDank";
 export default function Steper() {
   return (
     <div>
@@ -26,7 +27,8 @@ export default function Steper() {
         {/* <FirstStep/> */}
         {/* <SecStep/> */}
         {/* <ThreeSteper/> */}
-        <ForthStep/>
+        {/* <ForthStep/> */}
+        <VielenDank/>
       </div>
       <div className="steper-footer">
         <span>Copyright © 2022 FE Finance. Alle Rechte vorbehalten.</span>

@@ -256,6 +256,10 @@
         margin: 0 0 13px 0;
         color: #424242;
 
+        @include breakpoint("max-xl") {
+          margin: 0;
+        }
+
         @include breakpoint("max-sm") {
           margin: 0 0 10px 0;
         }
