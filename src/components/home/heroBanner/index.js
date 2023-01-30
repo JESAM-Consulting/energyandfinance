@@ -14,7 +14,7 @@ export default function HeroBanner() {
               <div className="text-style">
                 <h4>Werde</h4>
                 <div className="button-rigth-alignment">
-                <button>Energy Guide <br/>(m/w/d)</button>
+                <button>Energy Guide <br/> <span>(m/w/d)</span></button>
                 </div>
                 <div className="right-content-alignment">
                   <h6>

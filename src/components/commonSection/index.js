@@ -36,7 +36,7 @@ export default function CommonSection() {
                 </div>
                 <h2>Home-Office</h2>
                 
-                <p>Flexible Arbeitsorte und mobiles Arbeiten</p>
+                <p className="Flexible-width">Flexible Arbeitsorte und mobiles Arbeiten</p>
               </div>
               <div className="sub-grid-items">
                 <div className="icon-center-alignment">

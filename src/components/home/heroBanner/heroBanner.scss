@@ -137,16 +137,27 @@
 
                 button {
                     margin: 0 0 12px 0;
-                    padding: 12px 20px;
+                    padding: 12px 50px;
                     font-weight: 700;
                     font-size: 36px;
                     line-height: 52px;
                     text-align: center;
                     background: #080917;
+                    -webkit-clip-path: polygon(8% 0,100% 0,92% 100%,0 100%);
+    clip-path: polygon(8% 0,100% 0,92% 100%,0 100%);
                     border: none;
                     cursor: pointer;
                     color: #93C45E;
+                    span {
+                        font-weight: 400;
+                        font-size: 30px;
+                        display: block;
 
+                        @include breakpoint("max-sm") {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
                     @include breakpoint("max-sm") {
                         font-weight: 500;
                         width: 100%;
