@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./steper.scss";
 import Logo from "../../assets/icons/new-logo.svg";
 import SteperLine from "./steperLine";
@@ -22,7 +23,9 @@ console.log("@#@#&&&",stepper);
         <div className="steper-container">
           <div className="first-content-alignment">
             <div>
+              <NavLink to="/">
               <img src={Logo} alt="Logo" />
+            </NavLink>
             </div>
             <div>
               <p>
