@@ -14,7 +14,7 @@ export default function FirstStep(props) {
               <div className="button-left-right-alignment">
                 <button
                   onClick={(e) => {
-                    setStepper({ firstStepper: "yes" });
+                    setStepper({ ...stepper,firstStepper: "yes" });
                     setTabview("second");
                   }}
                 >
@@ -22,7 +22,7 @@ export default function FirstStep(props) {
                 </button>
                 <button
                   onClick={(e) => {
-                    setStepper({ firstStepper: "no" });
+                    setStepper({...stepper, firstStepper: "no" });
                     setTabview("second");
                   }}
                 >

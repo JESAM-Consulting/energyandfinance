@@ -16,7 +16,6 @@ export default function Steper() {
     forthStepper: "",
   });
   const [tabview, setTabview] = useState("first");
-console.log("@#@#&&&",stepper);
   return (
     <div>
       <div className="steper-all-content-alignment">
@@ -36,7 +35,7 @@ console.log("@#@#&&&",stepper);
         </div>
       </div>
       <div className="main-child-content-steper-page-alignment">
-        <SteperLine />
+        <SteperLine tabview={tabview}/>
         {tabview === "first" && (
           <FirstStep
             stepper={stepper}
@@ -66,7 +65,9 @@ console.log("@#@#&&&",stepper);
             setTabview={setTabview}
           />
         )}
-         {/* <VielenDank/> */}
+        {tabview === "fifth" && (
+         <VielenDank/>
+        )}
       </div>
       <div className="steper-footer">
         <span>Copyright © 2022 FE Finance. Alle Rechte vorbehalten.</span>

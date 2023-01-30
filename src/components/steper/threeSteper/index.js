@@ -17,7 +17,7 @@ export default function ThreeSteper(props) {
                 <div>
                   <button
                     onClick={(e) => {
-                      setStepper({ ThirdStepper: "Berater" });
+                      setStepper({...stepper, ThirdStepper: "Berater" });
                       setTabview("forth");
                     }}
                   >
@@ -25,7 +25,7 @@ export default function ThreeSteper(props) {
                   </button>
                   <button
                     onClick={(e) => {
-                      setStepper({ ThirdStepper: "Führungskraft" });
+                      setStepper({...stepper, ThirdStepper: "Führungskraft" });
                       setTabview("forth");
                     }}
                   >
