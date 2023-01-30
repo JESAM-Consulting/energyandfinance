@@ -1,6 +1,8 @@
 import React from 'react'
 import './secStep.scss';
-export default function SecStep() {
+export default function SecStep(props) {
+    const { stepper, setStepper, setTabview } = props;
+
   return (
     <div>
         <div className="sec-step-all-content-alignment">
@@ -10,8 +12,14 @@ export default function SecStep() {
                         <h5>Hast du einen Abschluss nach 34d?</h5>
                         <p>in 3 Schritten zu FE Finance</p>
                         <div className="button-left-right-alignment">
-                            <button>Ja</button>
-                            <button>Nein</button>
+                            <button  onClick={(e) => {
+                    setStepper({ secondStepper: "yes" });
+                    setTabview("third");
+                  }}>Ja</button>
+                            <button  onClick={(e) => {
+                    setStepper({ secondStepper: "no" });
+                    setTabview("third");
+                  }}>Nein</button>
                         </div>
                     </div>
                 </div>

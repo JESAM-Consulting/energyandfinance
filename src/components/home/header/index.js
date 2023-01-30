@@ -35,7 +35,7 @@ export default function Header() {
                 <img src={Logo} alt="Logo"/>
               </div>
               <div className="button">
-                <button>Jetzt bewerben</button>
+                <button onClick={() => setModalOpen(!modalOpen)}>Jetzt bewerben</button>
               </div>
             </div>
           </div>

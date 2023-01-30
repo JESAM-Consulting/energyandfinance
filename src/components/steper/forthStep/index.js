@@ -1,6 +1,9 @@
 import React from "react";
 import "./forthStep.scss";
-export default function ForthStep() {
+export default function ForthStep(props) {
+  const { stepper, setStepper } = props;
+  console.log("====>",stepper.forthStepper,stepper?.ThirdStepper,stepper.secondStepper,stepper.firstStepper);
+
   return (
     <div>
       <div className="forth-step-all-content-alignment">

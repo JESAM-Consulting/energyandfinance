@@ -1,10 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
 import "./heroBanner.scss";
 import XmldIcon from "../../../assets/icons/xmld.svg";
 import XmldIconMobile from "../../../assets/icons/xmld-mobile.svg";
 import DownArrow from "../../../assets/icons/mobile-down.svg";
 import LongArrow from "../../../assets/icons/long-arrow.svg";
+import ContactModal from "../../ContactModal";
+import SecModal from "../../secModal";
 export default function HeroBanner() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modal2Open, setModal2Open] = useState(false);
   return (
     <div>
       <div className="hero-banner-all-content-alignment">
@@ -14,7 +18,7 @@ export default function HeroBanner() {
               <div className="text-style">
                 <h4>Werde</h4>
                 <div className="button-rigth-alignment">
-                <button>Energy Guide <br/>(m/w/d)</button>
+                <button>Energy Guide <br/> <span>(m/w/d)</span></button>
                 </div>
                 <div className="right-content-alignment">
                   <h6>
@@ -42,13 +46,20 @@ export default function HeroBanner() {
                 <h6>Deine Karriere als Financial Guide starten</h6>
                 <div className="icon-text">
                   <img src={LongArrow} alt="LongArrow"/>
-                  <span>Jetzt bewerben</span>
+                  <span onClick={() => setModalOpen(!modalOpen)}>Jetzt bewerben</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {modalOpen && (
+        <ContactModal
+          setModalOpen={setModalOpen}
+          setModal2Open={setModal2Open}
+        />
+      )}
+      {modal2Open && <SecModal setModal2Open={setModal2Open} />}
     </div>
   );
 }

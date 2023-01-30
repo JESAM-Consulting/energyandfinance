@@ -1,7 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import "./newClientSection.scss";
 import ProfileRoundImage from '../../../assets/images/profile-round.png';
+import ContactModal from "../../ContactModal";
+import SecModal from "../../secModal";
+
 export default function NewClientSection() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modal2Open, setModal2Open] = useState(false);
   return (
     <div>
       <div className="new-client-section-banner-design">
@@ -12,8 +17,8 @@ export default function NewClientSection() {
              Durch Energy & Finance bin ich am Markt überlegen. 
             </h1> 
             <p>André <span>von Energy & Finance</span></p>
-            <button>
-            Jetzt bewerben <br/>
+            <button onClick={() => setModalOpen(!modalOpen)}>
+            Jetzt bewerben<br/>
             <span>(ohne Lebenslauf in 30 Sek.)</span>
             </button>
             </div>
@@ -25,6 +30,13 @@ export default function NewClientSection() {
           </div>
         </div>
       </div>
+      {modalOpen && (
+        <ContactModal
+          setModalOpen={setModalOpen}
+          setModal2Open={setModal2Open}
+        />
+      )}
+      {modal2Open && <SecModal setModal2Open={setModal2Open} />}
     </div>
   );
 }

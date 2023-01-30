@@ -2,6 +2,11 @@
 
 
 .new-common-section-content-alignment {
+    margin-top: -50px;
+
+    @include breakpoint("max-sm") {
+        margin-top: 0;
+    }
     .grid {
         display: grid;
         grid-template-columns: 303px 1fr;
@@ -30,7 +35,7 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 padding: 0 0 86px 0;
-                gap: 50px;
+                gap: 24px;
 
                 @include breakpoint("max-sm") {
                     grid-template-columns: repeat(2, 1fr);
@@ -41,6 +46,14 @@
                 .sub-grid-items:last-child {
                     p {
                         max-width: 100%;
+                    }
+                }
+
+                .Flexible-width {
+                    width: 191px !important;
+
+                    @include breakpoint("max-sm") {
+                        width: 100% !important;
                     }
                 }
 

@@ -53,7 +53,7 @@ export default function WirSection() {
                 Administration, Service, CRM und Abrechnung unterstützt, bilden
                 wir ein starkes Team.
               </p>
-              <button>Mehr zu FE Finance erfahren</button>
+              <button onClick={() => setModalOpen(!modalOpen)}>Mehr zu FE Finance erfahren</button>
             </div>
           </div>
         </div>

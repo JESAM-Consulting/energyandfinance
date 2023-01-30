@@ -76,16 +76,14 @@ export default function ContactModal(props) {
   const submitContact = (e) => {
     e.preventDefault();
     if (validateforUserData()) {
-      ApiPost(`contact/create-contact`, inputValue)
+      ApiPost(`create-energy-form`, inputValue)
         .then((res) => {
-          console.log("success res", res);
           setInputValue({});
           props.setModalOpen(false);
           props.setModal2Open(true);
           setSuccessMessage(true);
         })
         .catch((err) => {
-          console.log("errrrrrrrrr", err);
           toast.error("Etwas ist schief gelaufen. Bitte versuche es erneut");
         });
     }
@@ -112,7 +110,7 @@ export default function ContactModal(props) {
                 <p>Wir, die Energy & Finance GmbH legt großen Wert auf Effizienz und kurze Wege. </p>
                 <p>Um den Bewerbungsprozess für dich so angenehm wie möglich zu gestalten haben wir auf ein langes Bewerbungsformular verzichtet.</p>
                 <p>Wir freuen uns auf deine Bewerbung und melden uns binnen 48h bei dir.</p>
-              
+                <h6>So können wir dich erreichen</h6>
                 <div class="floating-form">
                   <div class="floating-label">
                     <input class="floating-input" type="text" placeholder=" "
