@@ -34,13 +34,7 @@ export default function HeroBanner() {
             </div>
             <div className="grid-items">
               <div className="image-center-alignment">
-                <iframe
-                  src="https://player.vimeo.com/video/759241708?h=393305830d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  title="imagefilm_2_9.mp4"
-                ></iframe>
+              <iframe src="https://player.vimeo.com/video/793921345?h=1b52db2d7c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Energy &amp;amp; Finance Werbevideo_CUT4"></iframe>
               </div>
               <div className="video-text-style">
                 <h6>Deine Karriere als Financial Guide starten</h6>

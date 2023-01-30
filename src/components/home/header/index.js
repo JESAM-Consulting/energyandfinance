@@ -10,25 +10,6 @@ export default function Header() {
 
   return (
     <div>
-      {/* <div className="header-design">
-        <div className="container-lg">
-          <div className="mobile-first-text-show">
-            <p>
-              Ihr Vermögen <span>braucht</span> Sicherheit.
-            </p>
-          </div>
-          <div className="header-alignment">
-            <div className="logo">
-              <img src={Logo} alt="Logo" />
-              <p>
-                Ihr Vermögen <span>braucht</span> Sicherheit.
-              </p>
-            </div>
-            <div className="button">
-              <button onClick={() => setModalOpen(!modalOpen)}>Jetzt kostenfreie Beratung anfordern</button>
-            </div>
-          </div>
-        </div> */}
         <div className="energy-header">
           <div className="new-container">
             <div className="new-header-alignment">
@@ -43,7 +24,6 @@ export default function Header() {
             </div>
           </div>
         </div>
-      {/* </div> */}
       {modalOpen && (
         <ContactModal
           setModalOpen={setModalOpen}
