@@ -189,7 +189,7 @@ console.log("inputValue",inputValue);
                     onChange={(e) => {
                       handleOnChange(e);
                     }}
-                    onKeyPress={bindInput}
+                    // onKeyPress={bindInput}
                   />
                   <span class="highlight"></span>
                   <label>E-mail</label>
