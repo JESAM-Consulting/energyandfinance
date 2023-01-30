@@ -1,0 +1,161 @@
+@import '../../../styles/mixins/global.scss';
+
+.hero-banner-all-content-alignment {
+    padding: 60px 0 0 0;
+
+    @include breakpoint("max-sm") {
+        padding: 12px 0 0 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 393px 1fr;
+        gap: 33px;
+
+        @include breakpoint("max-sm") {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0;
+        }
+
+        .grid-items {
+            .image-center-alignment {
+                iframe {
+                    width: 100%;
+                    height: 287px;
+
+                    @include breakpoint("max-sm") {
+                        height: 210px;
+                    }
+                }
+            }
+
+            .video-text-style {
+                padding: 30px 0 0 39px;
+
+                @include breakpoint("max-sm") {
+                    padding: 0 0 0 0;
+                }
+
+                .icon-text {
+                    display: flex;
+                    align-items: center;
+                    gap: 18px;
+                    cursor: pointer;
+
+                    span {
+                        font-weight: 700;
+                        color: #080917;
+                        font-size: 14px;
+                        line-height: 30px;
+
+                        @include breakpoint("max-sm") {
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+
+                h6 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    margin: 0 0 10px 0;
+                    color: #000000;
+                    line-height: 30px;
+
+                    @include breakpoint("max-sm") {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 30px;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .text-style {
+                h4 {
+                    font-weight: 300;
+                    font-size: 40px;
+                    line-height: 65px;
+                    text-align: right;
+                    color: #000000;
+
+                    @include breakpoint("max-sm") {
+                        font-weight: 300;
+                        font-size: 30px;
+                        line-height: 65px;
+                        text-align: center;
+                    }
+                }
+
+                .mobile-down-show {
+                    display: none;
+
+                    @include breakpoint("max-sm") {
+                        display: block;
+                    }
+
+                    .arrow-center-alignment {
+                        padding: 8px 0 0 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                .right-content-alignment {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
+
+                h6 {
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 44px;
+                    text-align: right;
+                    max-width: 348px;
+                    color: #000000;
+
+                    @include breakpoint("max-sm") {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 29px;
+                        max-width: 273px;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+
+                .button-rigth-alignment {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    @include breakpoint("max-sm") {}
+                }
+
+                button {
+                    margin: 0 0 12px 0;
+                    padding: 12px 20px;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 52px;
+                    text-align: center;
+                    background: #080917;
+                    border: none;
+                    cursor: pointer;
+                    color: #93C45E;
+
+                    @include breakpoint("max-sm") {
+                        font-weight: 500;
+                        width: 100%;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+
+                }
+            }
+        }
+    }
+}

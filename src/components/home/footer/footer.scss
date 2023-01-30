@@ -1,0 +1,551 @@
+@import '../../../styles/mixins/global.scss';
+
+.footer-first {
+    margin: 80px 0 0 0;
+    background: #080917;
+    padding: 140px 0 108px 0;
+
+    @include breakpoint("max-md") {
+        margin: 40px 0 0 0;
+        padding: 79px 0 65px 0;
+    }
+
+    @include breakpoint("max-sm") {
+        margin: 33px 0 0 0;
+        padding: 37px 0;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+        color: #fff;
+        text-align: center;
+
+
+
+
+        span {
+            font-weight: 300;
+        }
+
+        br {
+            @include breakpoint("max-sm") {
+                display: none;
+            }
+        }
+
+        @include breakpoint("max-md") {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 49px;
+        }
+
+
+        @include breakpoint("max-sm") {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        br {
+            @include breakpoint("max-sm") {
+                display: none;
+            }
+        }
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 49px;
+        color: #fff;
+        text-align: center;
+
+        @include breakpoint("max-md") {
+            font-size: 24px;
+            line-height: 49px;
+        }
+
+        @include breakpoint("max-sm") {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .button-center-alignment {
+        display: flex;
+        align-items: center;
+        padding: 40px 0 0 0;
+        justify-content: center;
+
+        @include breakpoint("max-md") {
+            padding: 40px 0 0 0;
+        }
+
+        @include breakpoint("max-sm") {
+            padding: 30px 0 0 0;
+        }
+
+        button {
+            padding: 22px 37px;
+            background: #FFFFFF;
+            cursor: pointer;
+            font-weight: 700;
+            min-width: 243px;
+            font-size: 16px;
+            line-height: 22px;
+            color: #333333;
+            border: none;
+
+            span {
+                font-weight: 400;
+                display: block;
+                font-size: 8px;
+                line-height: 14px;
+            }
+
+            @include breakpoint("max-md") {
+                padding: 15px 20px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            br {
+                @include breakpoint("max-sm") {
+                    display: none;
+                }
+            }
+
+            @include breakpoint("max-sm") {
+                font-weight: 700;
+                font-size: 12px;
+                padding: 14px 52px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+
+
+.footer-design {
+    padding: 148px 0 60px 0;
+
+    @include breakpoint("max-md") {
+        padding: 70px 0 27px 0;
+    }
+
+    @include breakpoint("max-md") {
+        padding: 43px 0 32px 0;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 207px 1fr;
+        gap: 31px;
+
+        @include breakpoint("max-md") {
+            gap: 30px;
+            grid-template-columns: 140px 1fr;
+        }
+
+        @include breakpoint("max-sm") {
+            gap: 0;
+            grid-template-columns: 1fr;
+        }
+
+        .icon-alignment {
+            display: flex;
+            align-items: center;
+            padding: 18px 0 0 0;
+
+            div {
+                padding-right: 23px;
+
+                img {
+                    cursor: pointer;
+                }
+            }
+
+            div:last-child {
+                padding: 0;
+            }
+        }
+
+        .footer-grid-items:nth-child(2) {
+            border-left: 1px solid #333333;
+
+            @include breakpoint("max-sm") {
+                border: none;
+            }
+        }
+
+        .footer-grid-items {
+            .logo-center-alignment {
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+                @include breakpoint("max-sm") {
+                    display: none;
+                }
+            }
+
+            .sub-content-alignment {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 30px;
+
+                @include breakpoint("max-sm") {
+                    padding-left: 0;
+                }
+            }
+
+            .all-icon-text-alignment {
+                .icon-text-alignment:last-child {
+                    padding: 0;
+                }
+            }
+
+            .three-section {
+                max-width: 295px;
+
+                @include breakpoint("max-sm") {
+                    max-width: 100%;
+                    padding-left: 0;
+                    max-width: 100%;
+                }
+
+                h4 {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #333333;
+                    margin: 0 0 12px 0;
+
+                    @include breakpoint("max-md") {
+                        font-size: 13px;
+                    }
+
+                    @include breakpoint("max-sm") {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+
+                }
+            }
+
+            .footer-last-child-text-alignmetn {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                gap: 4px;
+                padding: 6px 0 0 0;
+
+                @include breakpoint("max-sm") {
+                    justify-content: space-between;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+
+                    p {
+                        width: 196px;
+                        font-weight: 700;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 15px;
+                        color: #333333;
+
+
+                        @include breakpoint("max-sm") {
+                font-weight: 900;
+font-size: 10px;
+line-height: 15px;
+                            max-width: 100px;
+                        }
+
+                    }
+                }
+            }
+
+            .icon-text-alignment {
+                display: flex;
+                padding: 0 0 14px 0;
+                align-items: center;
+                gap: 9px;
+
+                @include breakpoint("max-sm") {
+                    padding: 0 0 10px 0;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        @include breakpoint("max-sm") {
+                            max-width: 10px;
+                        }
+                    }
+                }
+
+                a {
+
+                    cursor: pointer;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 15px;
+                    /* identical to box height, or 107% */
+
+                    display: block;
+                    color: #333333;
+
+
+
+                    @include breakpoint("max-sm") {
+                        font-weight: 400;
+                        font-size: 9px;
+                        line-height: 15px;
+                    }
+                }
+            }
+
+            .sec-section {
+                @include breakpoint("max-sm") {
+                    padding-left: 0;
+                    padding-bottom: 0;
+                }
+
+                h2 {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 15px;
+                    font-family: 'Open Sans', sans-serif;
+                    color: #333333;
+                    margin: 0 0 5px 0;
+
+                    @include breakpoint("max-md") {
+                        font-size: 12px;
+                        line-height: 15px;
+                        margin: 0 0 1px 0;
+
+                    }
+
+                    @include breakpoint("max-sm") {
+                        font-weight: 400;
+                        font-size: 16px;
+                        margin: 0 0 7px 0;
+                        line-height: 15px;
+                    }
+                }
+
+                h3 {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 15px;
+                    font-family: 'Open Sans', sans-serif;
+                    color: #080917;
+                    margin: 0 0 20px 0;
+
+
+                    @include breakpoint("max-sm") {
+                        font-size: 12px;
+                        font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+                        margin: 0 0 9px 0;
+                    }
+                }
+            }
+
+
+
+            .first-section {
+                @include breakpoint("max-sm") {
+                    display: none;
+                }
+
+                .soc-icon-alignment {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                    padding: 30px 0 0 0;
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #333333;
+                    font-family: 'Open Sans', sans-serif;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+.footer-last-chiild-sec {
+    padding: 0 0 30px 0;
+
+    @include breakpoint("max-sm") {
+        padding: 0 0 35px 0;
+    }
+
+
+    p {
+        font-weight: 400;
+        color: #1F1D21;
+        margin: 11px 0 0 0;
+        cursor: pointer;
+        color: #1F1D21;
+        text-align: center;
+        font-size: 13px;
+        line-height: 20px;
+
+        @include breakpoint("max-sm") {
+            margin: 0;
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+
+    .footer-link-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint("max-sm") {
+            padding: 0 0 10px 0;
+        }
+
+        a:nth-child(2) {
+            padding: 0 5px;
+        }
+
+        a {
+            display: block;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            color: #1F1D21;
+            cursor: pointer;
+
+            @include breakpoint("max-sm") {
+                font-weight: 600;
+                font-size: 8px;
+                line-height: 10px;
+            }
+        }
+    }
+}
+
+.mobile-footer-show {
+    display: none;
+
+    @include breakpoint("max-sm") {
+        display: block;
+    }
+
+    .mobile-footer-center-alignment {
+        display: flex;
+        margin: 0 0 50px 0;
+
+        @include breakpoint("max-sm") {
+            justify-content: center;
+            display: block;
+        }
+
+        .icon-alignment {
+            display: flex;
+            align-items: center;
+            padding: 10px 0 0 0;
+
+            @include breakpoint("max-sm") {
+                justify-content: center;
+
+            }
+
+            div {
+                padding-right: 23px;
+            }
+
+            div:last-child {
+                padding: 0;
+            }
+
+
+        }
+
+        .footer-logo-mobile {
+            border-right: 1px solid #333333;
+            padding-right: 0px;
+
+            @include breakpoint("max-sm") {
+                padding-right: 11px;
+                border: none;
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                @include breakpoint("max-sm") {
+                    max-width: 153px;
+                    padding: 0 0 7px 0;
+                    border-bottom: 1px solid #333333;
+
+                }
+            }
+        }
+
+        .first-section-mobile {
+            padding-left: 15px;
+
+            @include breakpoint("max-sm") {
+                padding-left: 0;
+            }
+
+            p {
+                font-weight: 500;
+                color: #333333;
+                font-family: 'Open Sans', sans-serif;
+
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 32px;
+
+                @include breakpoint("max-sm") {
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 20px;
+                    text-align: center;
+                    font-family: 'Open Sans', sans-serif;
+
+
+
+                }
+            }
+
+
+        }
+    }
+}
+
+.an-align {
+    @include breakpoint("max-sm") {
+        padding-left: 5px;
+    }
+}

@@ -1,0 +1,93 @@
+@import '../../styles/mixins/global.scss';
+
+
+.new-common-section-content-alignment {
+    .grid {
+        display: grid;
+        grid-template-columns: 303px 1fr;
+        gap: 78px;
+        align-items: flex-end;
+
+        @include breakpoint("max-sm") {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 20px 0 0 0;
+        }
+
+        .grid-items:nth-child(1) {
+            @include breakpoint("max-sm") {
+                display: none;
+            }
+        }
+        .mobile-show-image {
+            display: none;
+
+            @include breakpoint("max-sm") {
+                display: block;
+            }
+        }
+        .grid-items {
+            .sub-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 0 0 86px 0;
+                gap: 50px;
+
+                @include breakpoint("max-sm") {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 28px;
+                    padding: 0;
+                }
+
+                .sub-grid-items:last-child {
+                    p {
+                        max-width: 100%;
+                    }
+                }
+
+                .sub-grid-items {
+                    .icon-center-alignment {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 0 14px 0;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        margin: 0 auto;
+                        color: #2E2E2E;
+                        max-width: 193px;
+                        font-weight: 400;
+
+                        @include breakpoint("max-sm") {
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 12px;
+                            text-align: center;
+                        }
+                    }
+
+                    h2 {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 22px;
+                        margin: 0 0 18px 0;
+                        text-align: center;
+                        min-height: 44px;
+                        color: #000000;
+
+                        @include breakpoint("max-sm") {
+                            font-weight: 700;
+                            margin: 0 0 6px 0;
+                            font-size: 12px;
+                            min-height: 30px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,233 @@
+@import "../../../styles/mixins/global.scss";
+
+.forth-step-all-content-alignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .forth-box {
+    width: 451px;
+
+    .form-box-center-alignment {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .button-design {
+        padding: 10px 0 0 0;
+        button {
+          padding: 8px 20px;
+          cursor: pointer;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 18px;
+          text-align: center;
+          color: #ffffff;
+          background: #9dbc78;
+          border-radius: 5px;
+          border: none;
+        }
+      }
+
+      .checkbox-content-alignment {
+        display: flex;
+        padding: 0 0 10px 0;
+        align-items: center;
+
+        h3 {
+          font-weight: 300;
+          font-size: 9px;
+          line-height: 12px;
+          font-family: "Inter", sans-serif;
+          padding-left: 6px;
+          color: #000000;
+
+          @include breakpoint("max-sm") {
+            font-weight: 300;
+            font-size: 8px;
+            line-height: 12px;
+          }
+        }
+      }
+
+      .form-box {
+        width: 375px;
+
+        .floating-form {
+          padding: 15px 0 0 0;
+
+          /****  floating-Lable style start ****/
+          .floating-label {
+            position: relative;
+            margin-bottom: 14px;
+          }
+
+          .floating-input,
+          .floating-select {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 16px;
+            padding: 4px 4px;
+            display: block;
+            width: 100%;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #000;
+          }
+
+          .floating-input:focus,
+          .floating-select:focus {
+            outline: none;
+            border-bottom: 1px solid #000;
+          }
+
+          label {
+            color: #000;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 5px;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+          }
+
+          .floating-input:focus ~ label,
+          .floating-input:not(:placeholder-shown) ~ label {
+            top: -11px;
+            font-size: 12px;
+            line-height: 16px;
+            color: #000;
+          }
+
+          .floating-select:focus ~ label,
+          .floating-select:not([value=""]):valid ~ label {
+            top: -11px;
+            font-size: 12px;
+            line-height: 16px;
+            color: #000;
+          }
+
+          /* active state */
+          .floating-input:focus ~ .bar:before,
+          .floating-input:focus ~ .bar:after,
+          .floating-select:focus ~ .bar:before,
+          .floating-select:focus ~ .bar:after {
+            width: 50%;
+          }
+
+          *,
+          *:before,
+          *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+          }
+
+          .floating-textarea {
+            min-height: 30px;
+            max-height: 260px;
+            overflow: hidden;
+            overflow-x: hidden;
+          }
+
+          /* highlighter */
+          .highlight {
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            top: 15%;
+            left: 0;
+            pointer-events: none;
+            opacity: 0.5;
+          }
+
+          /* active state */
+          .floating-input:focus ~ .highlight,
+          .floating-select:focus ~ .highlight {
+            -webkit-animation: inputHighlighter 0.3s ease;
+            -moz-animation: inputHighlighter 0.3s ease;
+            animation: inputHighlighter 0.3s ease;
+          }
+        }
+        input[type="checkbox"] + label {
+          display: block;
+          cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+          display: none;
+        }
+
+        input[type="checkbox"] + label:before {
+          content: "✔";
+          border: 1px solid #000000;
+          border-radius: 2px;
+          display: flex;
+          width: 12px;
+          height: 12px;
+          vertical-align: bottom;
+          color: transparent;
+          transition: 0.2s;
+          font-size: 5px !important;
+          justify-content: center;
+          align-items: center;
+        }
+
+        input[type="checkbox"]:checked + label:before {
+          background: #9dbc78;
+          border: 1px solid #9dbc78 !important;
+          color: #fff;
+        }
+
+        input[type="checkbox"]:checked + label:after {
+          display: block;
+          position: absolute;
+          top: 11px;
+          left: 16px;
+          width: 4px;
+          height: 10px;
+          border: 1px solid none !important;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    .text-style {
+      h4 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        margin: 0 0 3px 0;
+        color: #000000;
+      }
+      p {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 22px;
+        max-width: 435px;
+        margin: 0 auto 14px auto;
+        text-align: center;
+        font-family: "VisbyCF-Regular";
+
+        color: #000000;
+      }
+
+      h6 {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        font-family: "VisbyCF-Regular";
+        margin: 0 0 13px 0;
+        color: #424242;
+      }
+    }
+  }
+}

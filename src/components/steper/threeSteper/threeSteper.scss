@@ -1,0 +1,54 @@
+@import "../../../styles/mixins/global.scss";
+
+.three-step-all-content-alignment {
+  .steper-box-center-alignment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .step-box {
+
+      h5 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        margin: 0 0 10px 0;
+        color: #000000;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        font-family: "VisbyCF-Regular";
+        margin: 0 0 39px 0;
+        color: #000000;
+      }
+
+      .button-left-right-alignment {
+        padding: 0 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        button:last-child {
+            margin: 0;
+        }
+        button {
+            margin: 0 0 10px 0;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          display: block;
+          padding: 18px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          background: #9dbc78;
+          border-radius: 10px;
+          width: 400px;
+        }
+      }
+    }
+  }
+}

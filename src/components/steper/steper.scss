@@ -1,0 +1,46 @@
+@import "../../styles/mixins/global.scss";
+
+.steper-all-content-alignment {
+  border: 1px solid #dadada;
+  padding: 16px 0;
+  border-bottom: 1px solid #dadada;
+
+  .first-content-alignment {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+
+    p {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 30px;
+      color: #000000;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.steper-footer {
+  padding: 25px 0;
+  background: #373737;
+
+  span {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-family: "VisbyCF-Regular";
+    color: #ffffff;
+  }
+}
+
+
+.main-child-content-steper-page-alignment {
+    min-height: calc(100vh - 155px);
+    overflow: auto;
+}

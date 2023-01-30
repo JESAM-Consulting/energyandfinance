@@ -1,0 +1,61 @@
+@import "../../../styles/mixins/global.scss";
+
+.steper-line-all-contnet-alignment {
+  .steper-alignmetn-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 40px 0 63px 0;
+
+    &::before {
+        width: calc(100% - 7%);
+        left: 3%;
+        top: 5px;
+        content: "";
+        background-color: #DADADA;
+        position: absolute;
+        height: 1px;
+    }
+
+    .steper-icon-text-design {
+      width: fit-content;
+
+      p {
+        font-weight: 700;
+        font-size: 10px;
+        color: #595959;
+        font-family: "VisbyCF-Regular";
+
+        line-height: 16px;
+      }
+
+      .icon-center-alignment {
+        display: flex;
+        align-items: center;
+        padding: 0 0 11px 0;
+        justify-content: center;
+
+        .icon-design {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 1px solid #9dbc78;
+          display: flex;
+          position: relative;
+          z-index: 99;
+          background-color: #fff;
+          align-items: center;
+          justify-content: center;
+
+          .icon-design-active {
+            background-color: #9dbc78;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

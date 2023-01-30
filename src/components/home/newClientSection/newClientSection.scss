@@ -1,0 +1,137 @@
+@import '../../../styles/mixins/global.scss';
+@import '../../../styles/mixins/breakpoint.scss';
+
+.new-client-section-banner-design {
+    background-image: url("../../../assets/images/new-client.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 157px 0 98px 0;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    background-position: top center;
+
+    @include breakpoint("max-sm") {
+        background-image: url("../../../assets/images/new-client-banner-mobile.png");
+        padding: 100px 0 26px 0;
+        background-position: inherit;
+    }
+
+
+
+    .grid {
+        display: grid;
+        gap: 23px;
+        grid-template-columns: 1fr 289px;
+
+        @include breakpoint("max-sm") {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+        }
+
+        align-items: flex-end;
+
+        .grid-items:nth-child(1) {
+            @include breakpoint("max-sm") {
+                order: 2;
+            }
+        }
+
+        .grid-items {
+            .profile-image {
+                @include breakpoint("max-sm") {
+                    margin-top: -50px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 289px;
+                    border-radius: 50%;
+                    object-fit: cover;
+
+                    @include breakpoint("max-sm") {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+
+            p {
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 60px;
+                margin: 0 0 15px 0;
+                color: #FFFFFF;
+
+                @include breakpoint("max-sm") {
+                    font-weight: 800;
+                    font-size: 9px;
+                    margin: 0 0 24px 0;
+                    line-height: 10px;
+                }
+
+                span {
+                    font-weight: 400;
+                }
+            }
+
+            button {
+                padding: 22px 37px;
+                border: none;
+                cursor: pointer;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 600;
+                font-size: 16px;
+                min-width: 243px;
+                line-height: 22px;
+                background: #B8D895;
+
+                @include breakpoint("max-sm") {
+                    padding: 10px 40px;
+                    font-weight: 600;
+                    font-size: 12px;
+                    min-width: auto;
+                    line-height: 12px;
+                }
+
+                span {
+                    display: block;
+                    font-weight: 400;
+                    font-size: 8px;
+                    line-height: 14px;
+                }
+            }
+
+            h1 {
+                position: relative;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 43px;
+                padding-left: 35px;
+                color: #fff;
+
+                @include breakpoint("max-sm") {
+                    font-weight: 400;
+                    font-size: 11px;
+                    padding-left: 15px;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: -5px;
+                    left: 0;
+                    content: "“";
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 80px;
+                    line-height: 43px;
+                    color: #fff;
+
+                    @include breakpoint("max-sm") {
+                        font-weight: 400;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

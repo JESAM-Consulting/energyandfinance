@@ -1,0 +1,205 @@
+// @use  '';
+@use "../mixins/breakpoint.scss" as bp;
+$bp: (
+  base: 0px,
+  sm: 540px,
+  md: 992px,
+  lg: 1280px,
+);
+
+@import '../mixins/breakpoint.scss';
+
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include bp.breakpoint(md) {
+    max-width: 80%;
+  }
+
+  @include bp.breakpoint(lg) {
+    max-width: 1280px;
+  }
+}
+
+.container-lg {
+  max-width: calc(1334px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.container-lg-2 {
+  width: calc(1334px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-xl") {
+    max-width: calc(1334px + 40px);
+  }
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.container-md {
+  max-width: calc(1043px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.container-md-new {
+  max-width: calc(1126px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.container-md-2 {
+  max-width: calc(938px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.container-md-4 {
+  max-width: calc(981px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.container-md-3 {
+  max-width: calc(1218px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.container-md-8 {
+  max-width: calc(1208px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.container-md-9 {
+  max-width: calc(1160px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.container-md-11 {
+  max-width: calc(1210px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.container-lg-5 {
+  max-width: calc(1248px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+
+.new-container {
+  max-width: calc(1246px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.new-container-one {
+  max-width: calc(1019px + 40px);
+  padding: 0 20px;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+
+  margin: 0 auto;
+}
+
+.new-container-two {
+  max-width: calc(1230px + 40px);
+  padding: 0 20px;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+
+  margin: 0 auto;
+}
+
+.new-container-3 {
+  max-width: calc(1216px + 40px);
+  padding: 0 20px;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+
+  margin: 0 auto;
+}
+
+.container-lg-6 {
+  max-width: calc(1378px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include breakpoint("max-sm") {
+    padding: 0 30px;
+  }
+}
+
+.steper-container {
+  max-width: calc(1300px + 40px);
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.step-container {
+  max-width: calc(800px + 20px);
+  margin: 0 auto;
+  padding: 0 20px;
+}

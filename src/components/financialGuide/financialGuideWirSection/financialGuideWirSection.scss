@@ -1,0 +1,99 @@
+@import '../../../styles/mixins/global.scss';
+
+.FinancialGuideWirSection {
+    margin: 83px 0 0 0;
+    background-image: url("../../../assets/images/wir-new.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding: 64px 0;
+
+    @include breakpoint("max-md") {
+        margin: 50px 0 0 0;
+    }
+
+    @include breakpoint("max-sm") {
+        background-image: url("../../../assets/images/wir-new-mobile.png");
+        height: 743px;
+        padding: 353px 0 0 0;
+    }
+
+
+    .box-right-alignment {
+        display: flex;
+        justify-content: flex-end;
+
+        .box-text {
+            width: 576px;
+
+            @include breakpoint("max-md") {
+                width: 355px;
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 60px;
+                font-family: 'Montserrat', sans-serif;
+                margin: 0 0 10px 0;
+                color: #2E2E2E;
+
+                @include breakpoint("max-md") {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 60px;
+                }
+            }
+
+
+            p {
+                font-weight: 600;
+                font-size: 16px;
+                margin: 0 0 20px 0;
+                line-height: 22px;
+                /* or 138% */
+
+                font-family: 'Montserrat', sans-serif;
+
+                color: #2E2E2E;
+
+                @include breakpoint("max-md") {
+                    font-weight: 600;
+                    font-size: 10px;
+                    line-height: 22px;
+                }
+
+                @include breakpoint("max-sm") {
+                    font-size: 13px;
+                    line-height: 22px;
+                    max-width: 100%;
+                    max-width: 314px;
+
+                }
+            }
+
+            button {
+                color: #fff;
+                font-weight: 700;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+                color: #FFFFFF;
+                padding: 22px 37px;
+                margin: 10px 0 0 0;
+                background: #9DBC78;
+                cursor: pointer;
+                line-height: 22px;
+                border: none;
+
+                @include breakpoint("max-sm") {
+                    margin: 0;
+                    padding: 10px 15px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

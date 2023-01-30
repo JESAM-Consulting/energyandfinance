@@ -1,0 +1,177 @@
+@import '../../../styles/mixins/global.scss';
+
+.financial-client-section-content-alignment {
+    background-image: url("../../../assets/images/new1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center center;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    padding: 150px 0 98px 0;
+
+    @include breakpoint("max-md") {
+        padding: 120px 0 60px 0;
+    }
+
+    @include breakpoint("max-md") {
+        padding: 120px 0 65px 0;
+        background-image: url("../../../assets/images/new1-mobile.png");
+
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 289px;
+        align-items: center;
+        gap: 90px;
+
+        @include breakpoint("max-md") {
+            grid-template-columns: 1fr 163px;
+            gap: 30px;
+        }
+
+        @include breakpoint("max-sm") {
+            grid-template-columns: 1fr;
+            gap: 22px;
+        }
+
+        .grid-items:nth-child(1) {
+            @include breakpoint("max-sm") {
+                order: 2;
+            }
+        }
+
+        .grid-items:nth-child(2) {
+            @include breakpoint("max-sm") {
+                order: 1;
+            }
+        }
+
+        .mobile-button-center-alignment {
+            @include breakpoint("max-sm") {
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+
+        .grid-items {
+            .profile-image {
+                @include breakpoint("max-sm") {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                img {
+                    width: 289px;
+                    border-radius: 50%;
+                    height: 289px;
+
+                    @include breakpoint("max-md") {
+                        width: 163px;
+                        height: 163px;
+                    }
+                }
+            }
+
+            button {
+                color: #fff;
+                border: none;
+                padding: 14px 30px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                cursor: pointer;
+                background: #9DBC78;
+
+                @include breakpoint("max-md") {
+                    padding: 15px 20px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-left: 20px;
+                }
+
+                @include breakpoint("max-sm") {
+                    padding: 9px 29px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 60px;
+                margin: 0 0 22px 0;
+                color: #ffff;
+
+                @include breakpoint("max-md") {
+                    padding-left: 20px;
+                    font-size: 16px;
+                    margin: 10px 0 22px 0;
+                    line-height: 23px;
+                }
+
+                @include breakpoint("max-sm") {
+                    font-weight: 800;
+                    font-size: 13px;
+                    line-height: 22px;
+                    max-width: 100%;
+                    text-align: left;
+                    margin: 4px 0 20px 0;
+                }
+
+                span {
+                    font-weight: 800;
+                }
+            }
+
+            h1 {
+                position: relative;
+                font-weight: 400;
+                font-size: 32px;
+                font-style: italic;
+                line-height: 43px;
+                padding-left: 40px;
+                color: #fff;
+
+                @include breakpoint("max-md") {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 26px;
+                    padding-left: 20px;
+                }
+
+                @include breakpoint("max-sm") {
+                    max-width: 300px;
+                    margin: 0 0 11px 0;
+                    text-align: left;
+
+                }
+
+                &::before {
+                    position: absolute;
+                    top: -5px;
+                    left: 0;
+                    content: "“";
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 80px;
+                    line-height: 43px;
+                    color: #fff;
+
+                    @include breakpoint("max-md") {
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 26px;
+                    }
+
+                    @include breakpoint("max-sm") {
+                        left: -8px;
+
+                    }
+                }
+            }
+        }
+    }
+}

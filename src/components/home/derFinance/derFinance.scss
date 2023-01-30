@@ -1,0 +1,213 @@
+@import '../../../styles/mixins/global.scss';
+
+.der-finace-all-content-alignment {
+    padding: 60px 0 0 0;
+
+    @include breakpoint("max-md") {
+        padding: 20px 0 0 0;
+    }
+
+    .container-md-2 {
+        @include breakpoint("max-sm") {
+            padding: 0;
+        }
+    }
+
+    .image-center-alignment {
+        display: flex;
+        justify-content: center;
+        padding: 47px 0 45px 0;
+
+        @include breakpoint("max-md") {
+            padding: 46px 0;
+        }
+
+        @include breakpoint("max-sm") {
+            padding: 15px 0 22px 0;
+        }
+
+        iframe {
+            width: 920px;
+            height: 441px;
+
+            @include breakpoint("max-md") {
+                height: 367px;
+            }
+
+            @include breakpoint("max-sm") {
+                height: 188px;
+                width: 100%;
+            }
+        }
+    }
+
+    .sub-text-style {
+        cursor: pointer;
+
+        h4 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000;
+            margin: 0 0 15px 0;
+            text-align: center;
+
+            @include breakpoint("max-md") {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+            @include breakpoint("max-sm") {
+                margin: 0;
+            }
+        }
+
+        .icon-text-alignment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                font-weight: 700;
+                padding-left: 18px;
+                display: block;
+                font-size: 14px;
+                line-height: 30px;
+                color: #9DBC78;
+            }
+        }
+    }
+
+    .page-title {
+        padding: 0 0 47px 0;
+
+        @include breakpoint("max-md") {
+            padding: 0 0 0 0;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 16px;
+            color: #2E2E2E;
+            text-align: center;
+            line-height: 22px;
+
+            @include breakpoint("max-md") {
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 22px;
+                margin: 0 0 10px 0;
+            }
+
+            @include breakpoint("max-sm") {
+                padding: 0 30px;
+            }
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 40px;
+            color: #2E2E2E;
+            text-align: center;
+            line-height: 60px;
+
+            @include breakpoint("max-md") {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            @include breakpoint("max-sm") {
+                font-weight: 600;
+                font-size: 23px;
+                line-height: 30px;
+                padding: 0 30px;
+            }
+        }
+    }
+}
+
+.only-mobile-show-data {
+    display: none;
+
+    @include breakpoint("max-md") {
+        display: block;
+    }
+
+    .bottom-text-content-alignment-right {
+        display: flex;
+        align-items: center;
+        padding: 0 30px 20px 0;
+        justify-content: flex-end;
+
+
+        span {
+            display: block;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 16px;
+            /* or 938% */
+            padding: 0 0 16px 0;
+            text-align: right;
+            font-family: "VisbyCF-Regular";
+
+            color: #000000;
+        }
+    }
+
+
+    .new-mobile-col-two-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 30px;
+        padding: 30px 30px 0 30px;
+
+        .new-mobile-col-two-grid-items:last-child {
+            p {
+                font-weight: 600;
+                font-size: 8px;
+                line-height: 14px;
+            }
+        }
+
+        .center-new-as {
+            display: flex;
+            justify-content: center;
+        }
+
+        .new-mobile-col-two-grid-items {
+            .icon-align {
+                padding: 0 0 10px 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            p {
+                font-weight: 600;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 15px;
+                color: #000;
+                word-break: break-all;
+                text-align: center;
+                margin: 0 auto 8px auto;
+                font-family: 'Montserrat', sans-serif;
+
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 22px;
+                font-family: 'Montserrat', sans-serif;
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                color: #2E2E2E;
+            }
+        }
+
+    }
+}
