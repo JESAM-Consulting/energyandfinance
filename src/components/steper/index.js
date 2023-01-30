@@ -7,6 +7,7 @@ import SecStep from "./secStep";
 import ThreeSteper from "./threeSteper";
 import ForthStep from "./forthStep";
 import VielenDank from "./vielenDank";
+import VielenDank from "./vielenDank";
 export default function Steper() {
   const [stepper, setStepper] = useState({
     firstStepper: "",
