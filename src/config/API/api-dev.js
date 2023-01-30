@@ -1,12 +1,11 @@
           // Local
-const protocol = "http";
-const host = "192.168.29.127:5050/FE_API/lead_api/v1/";
+// const protocol = "http";
+// const host = "192.168.29.127:5050/FE_API/lead_api/v1/";
 
           // Live
 
-// const protocol = "https";
-// const host = "api.siluna.rejoicehub.com/api/v1";
-
+const protocol = "https";
+const host = "fe-lead-commen-api.rejoicehub.com/FE_API/lead_api/v1/";
 
 
 const port = "";
