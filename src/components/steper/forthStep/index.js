@@ -176,25 +176,29 @@ console.log("inputValue",inputValue);
                     {errors?.postalCode}
                   </span>
                 </div>
-
                 <div class="floating-label">
                   <input
                     class="floating-input"
                     type="text"
+                    placeholder=" "
                     id="email"
                     name="email"
+
+
                     value={inputValue?.email}
                     onChange={(e) => {
                       handleOnChange(e);
                     }}
+                    onKeyPress={bindInput}
                   />
                   <span class="highlight"></span>
-                  <label>Email</label>
+                  <label>E-mail</label>
                   <span style={{ color: "#d92c2c", fontSize: "12px" }}>
                     {errors?.email}
                   </span>
                 </div>
 
+               
                 <div class="floating-label">
                   <input
                     class="floating-input"
