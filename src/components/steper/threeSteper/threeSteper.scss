@@ -7,7 +7,10 @@
     justify-content: center;
 
     .step-box {
-
+      @include breakpoint("max-sm") {
+        padding: 0 44px;
+        width: 100%;
+      }
       h5 {
         font-weight: 700;
         font-size: 32px;
@@ -15,6 +18,12 @@
         text-align: center;
         margin: 0 0 10px 0;
         color: #000000;
+        @include breakpoint("max-sm") {
+          font-weight: 700;
+          margin: 0 0 10px 0;
+          font-size: 14px;
+          line-height: 17px;
+        }
       }
       p {
         font-weight: 400;
@@ -24,6 +33,11 @@
         font-family: "VisbyCF-Regular";
         margin: 0 0 39px 0;
         color: #000000;
+        @include breakpoint("max-sm") {
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 16px;
+        }
       }
 
       .button-left-right-alignment {
@@ -31,6 +45,11 @@
         margin: 0 auto;
         display: flex;
         justify-content: center;
+
+        @include breakpoint("max-sm") {
+          padding: 0;
+          display: block;
+        }
         button:last-child {
             margin: 0;
         }
@@ -47,6 +66,11 @@
           background: #9dbc78;
           border-radius: 10px;
           width: 400px;
+
+          @include breakpoint("max-sm") {
+            width: 100%;
+            padding: 11px;
+          }
         }
       }
     }

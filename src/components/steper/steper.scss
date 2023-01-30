@@ -10,11 +10,21 @@
     align-items: center;
     gap: 27px;
 
+    @include breakpoint("max-sm") {
+      gap: 16px;
+    }
+
     p {
       font-weight: 800;
       font-size: 16px;
       line-height: 30px;
       color: #000000;
+
+      @include breakpoint("max-sm") {
+        font-weight: 800;
+font-size: 13px;
+line-height: 30px;
+      }
       span {
         font-weight: 400;
       }
