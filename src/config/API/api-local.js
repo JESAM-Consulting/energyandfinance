@@ -7,7 +7,7 @@
 // const protocol = "https";
 // const host = "api.siluna.rejoicehub.com/api/v1";
 
-// const host = "api.blockcreator.rejoicehub.com/api/v1";
+// const host = "api.blockcreator.rejoicezhub.com/api/v1";
 
 
 const port = "";

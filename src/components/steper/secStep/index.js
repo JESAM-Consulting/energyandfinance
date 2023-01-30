@@ -13,11 +13,11 @@ export default function SecStep(props) {
                         <p>in 3 Schritten zu FE Finance</p>
                         <div className="button-left-right-alignment">
                             <button  onClick={(e) => {
-                    setStepper({ secondStepper: "yes" });
+                    setStepper({ ...stepper,secondStepper: "yes" });
                     setTabview("third");
                   }}>Ja</button>
                             <button  onClick={(e) => {
-                    setStepper({ secondStepper: "no" });
+                    setStepper({ ...stepper,secondStepper: "no" });
                     setTabview("third");
                   }}>Nein</button>
                         </div>
