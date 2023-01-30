@@ -12,8 +12,6 @@ import Impressum from "./components/impressum";
 import Datenschutz from "./components/datenschutz";
 import Steper from "./components/steper";
 
-
-
 function RouteWrapper({
   component: Component,
   layout: Layout,
@@ -64,8 +62,8 @@ function App() {
         {/* <Route exact path="/"> */}
         {/* <Redirect to="/lp1" /> */}
         {/* </Route> */}
-        <Route exact path="/" component={Home}  layout={DefaultLayoutMain}/>
-        <Route exact path="/steper" component={Steper} layout={DefaultLayout} />
+        <RouteWrapper exact path="/" component={Home}  layout={DefaultLayoutMain}/>
+        <RouteWrapper exact path="/steper" component={Steper} layout={DefaultLayout} />
         {/* <Route exact path="/lp2" component={FinancialGuide} />
         <Route path="/impressum" component={Impressum} />
         <Route path="/datenschutz" component={Datenschutz} /> */}
