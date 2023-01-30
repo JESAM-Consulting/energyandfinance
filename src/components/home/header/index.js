@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./header.scss";
 import Logo from "../../../assets/logo/logo.svg";
 import ContactModal from "../../ContactModal";
+import { NavLink } from "react-router-dom";
 import SecModal from "../../secModal";
 export default function Header() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -35,7 +36,9 @@ export default function Header() {
                 <img src={Logo} alt="Logo"/>
               </div>
               <div className="button">
-                <button onClick={() => setModalOpen(!modalOpen)}>Jetzt bewerben</button>
+                <NavLink to="/steper">
+                <button>Jetzt bewerben</button>
+                </NavLink>
               </div>
             </div>
           </div>

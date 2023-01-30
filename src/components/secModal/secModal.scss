@@ -14,13 +14,13 @@
 
     .sec-modal-box {
         background-color: #fff;
-        width: 594px;
+        width: 455px;
 
         @include breakpoint("max-sm") {
             width: calc(100% - 60px);
         }
         .modal-body {
-            padding: 48px 35px 89px 35px;
+            padding: 38px 50px 38px 50px;
 
             @include breakpoint("max-sm") {
                 padding: 20px 30px 50px 30px;
@@ -73,7 +73,7 @@
 
         }
         .modal-header {
-            padding: 21px 27px;
+            padding: 22px 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -88,6 +88,18 @@
 
             @include breakpoint("max-sm") {
                 padding: 18px 30px;
+            }
+
+            div:first-child {
+                img {
+                    max-width: 164px;
+                }
+            }
+
+            div:last-child {
+                img {
+                    max-width: 27px;
+                }
             }
 
             img {
