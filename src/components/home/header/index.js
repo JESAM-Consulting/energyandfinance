@@ -18,7 +18,9 @@ export default function Header() {
               </div>
               <div className="button">
               
-                <button onClick={() => setModalOpen(!modalOpen)}>Jetzt bewerben</button>
+                <button onClick={() => setModalOpen(!modalOpen)}>Jetzt bewerben
+                <span>(ohne Lebenslauf in 30 Sek.)</span>
+                </button>
              
               </div>
             </div>
