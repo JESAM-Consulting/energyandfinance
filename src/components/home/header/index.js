@@ -17,9 +17,9 @@ export default function Header() {
                 <img src={Logo} alt="Logo"/>
               </div>
               <div className="button">
-                <NavLink to="/steper">
-                <button>Jetzt bewerben</button>
-                </NavLink>
+              
+                <button onClick={() => setModalOpen(!modalOpen)}>Jetzt bewerben</button>
+             
               </div>
             </div>
           </div>
