@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./footer.scss";
-import FooterLogo from "../../../assets/logo/logo.svg";
+import FooterLogo from "../../../assets/logo/logo.webp";
 import EmailIcon from "../../../assets/icons/email.svg";
 import MobileIcon from "../../../assets/icons/mobile.svg";
 import FacebookIcon from "../../../assets/icons/facebook.svg";

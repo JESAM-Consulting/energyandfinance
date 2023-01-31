@@ -1,5 +1,5 @@
 import "./ContactModal.scss";
-import ModalLogo from "../../assets/logo/logo.svg";
+import ModalLogo from "../../assets/logo/logo.webp";
 import CloeIcon from "../../assets/icons/ei_close.svg";
 import React, { useEffect, useState, useCallback } from "react";
 import { toast, ToastContainer } from "react-toastify";

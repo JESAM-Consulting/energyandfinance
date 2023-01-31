@@ -58,6 +58,10 @@
       transition: 0.2s ease all;
       -moz-transition: 0.2s ease all;
       -webkit-transition: 0.2s ease all;
+
+      @include breakpoint("max-sm") {
+        font-size: 14px;
+      }
     }
 
     .floating-input:focus ~ label,
