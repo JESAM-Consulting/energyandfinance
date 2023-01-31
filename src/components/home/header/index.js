@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./header.scss";
-import Logo from "../../../assets/logo/logo.webp";
+import Logo from "../../../assets/logo/logoFooter.svg";
 import ContactModal from "../../ContactModal";
 import { NavLink } from "react-router-dom";
 import SecModal from "../../secModal";

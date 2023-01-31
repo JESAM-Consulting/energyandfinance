@@ -13,7 +13,7 @@
             object-fit: cover;
 
             @include breakpoint("max-sm") {
-                max-width: 190px;
+                max-width: 130px;
             }
         }
     }
