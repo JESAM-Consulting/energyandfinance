@@ -28,26 +28,28 @@ export default function CommonSection() {
                   flexible Arbeitszeiten keine Kernzeiten unbefristete
                   Einstellung nach Probezeit
                 </p>
-                
               </div>
               <div className="sub-grid-items">
                 <div className="icon-center-alignment">
                   <img src={IconDesign2} alt="IconDesign2" />
                 </div>
                 <h2>Home-Office</h2>
-                
-                <p className="Flexible-width">Flexible Arbeitsorte und mobiles Arbeiten</p>
+
+                <p className="Flexible-width">
+                  Flexible Arbeitsorte und mobiles Arbeiten
+                </p>
               </div>
               <div className="sub-grid-items">
                 <div className="icon-center-alignment">
                   <img src={IconDesign2} alt="IconDesign2" />
                 </div>
                 <h2>Standort unabhängig</h2>
-                <p style={{maxWidth:'100%'}}>über 25 Standorte in Deutschland moderne Offices</p>
+                <p style={{ maxWidth: "100%" }}>
+                  über 25 Standorte in Deutschland moderne Offices
+                </p>
               </div>
               <div className="sub-grid-items mobile-show-image">
-               
-               <img src={MenImage1} alt="MenImage1"/>
+                <img src={MenImage1} alt="MenImage1" />
               </div>
             </div>
           </div>

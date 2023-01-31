@@ -29,14 +29,13 @@ export default function TextSection() {
                 <div className="sub-grid-items">
                   <h2>Unser Netzwerk wird dein Unternehmen</h2>
                   <p>
-                  Obwohl du selbstständig bist, profitierst du von einem
+                    Obwohl du selbstständig bist, profitierst du von einem
                     Unternehmernetzwerk, welches seines Gleichen sucht.
                   </p>
                   <p>
-                   Du bist
-                    nicht nur dein eigener Chef und bestimmst, wann und von wo
-                    du arbeitest, sondern hast auch die Möglichkeit dir dein
-                    eigenes Unternehmen aufzubauen.
+                    Du bist nicht nur dein eigener Chef und bestimmst, wann und
+                    von wo du arbeitest, sondern hast auch die Möglichkeit dir
+                    dein eigenes Unternehmen aufzubauen.
                   </p>
                 </div>
               </div>
@@ -68,15 +67,14 @@ export default function TextSection() {
                 </div>
                 <div className="sub-grid-items">
                   <h2>Engagement wird finanzieller Erfolg</h2>
+                  <p>Leistungsgerechte Bezahlung? Für jeden?</p>
                   <p>
-                    Leistungsgerechte Bezahlung? Für jeden? 
+                    Ja, denn du bestimmst mit deinem Engagement deine Karriere,
+                    unabhängig deines bisherigen Werdegangs. Auf diesem Weg
+                    begleiten wir dich nicht nur, sondern qualifizieren dich in
+                    allen Bereichen, wie z.B. Führung, Standortleitung, Aus-und
+                    Weiterbildung deiner Partner.
                   </p>
-                  <p>Ja, denn du
-                    bestimmst mit deinem Engagement deine Karriere, unabhängig
-                    deines bisherigen Werdegangs. Auf diesem Weg begleiten wir
-                    dich nicht nur, sondern qualifizieren dich in allen
-                    Bereichen, wie z.B. Führung, Standortleitung, Aus-und
-                    Weiterbildung deiner Partner.</p>
                 </div>
               </div>
             </div>
@@ -104,10 +102,8 @@ export default function TextSection() {
           <div className="button-center-alignment">
             {/* onClick={() => setModalOpen(!modalOpen)} */}
             <button onClick={() => setModalOpen(!modalOpen)}>
-            Jetzt bewerben <br/>
-              <span className="">
-              (ohne Lebenslauf in 30 Sek.)
-              </span>
+              Jetzt bewerben <br />
+              <span className="">(ohne Lebenslauf in 30 Sek.)</span>
             </button>
           </div>
         </div>

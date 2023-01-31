@@ -13,6 +13,7 @@
         background-image: url("../../../assets/images/new-client-banner-mobile.png");
         padding: 100px 0 26px 0;
         background-position: inherit;
+        clip-path: none;
     }
 
 
@@ -32,10 +33,18 @@
         .grid-items:nth-child(1) {
             @include breakpoint("max-sm") {
                 order: 2;
+                transform: translateY(-20px);
             }
         }
 
         .grid-items {
+            .endline{
+                display: none;
+
+                @include breakpoint('max-sm'){
+                    display: block;
+                }
+            }
             .profile-image {
                 @include breakpoint("max-sm") {
                     margin-top: -50px;
@@ -48,8 +57,10 @@
                     object-fit: cover;
 
                     @include breakpoint("max-sm") {
-                        width: 100px;
-                        height: 100px;
+                        transform: translateY(-40px);
+                        position: relative;
+                        width: 120px;
+                        height: 120px;
                     }
                 }
             }
@@ -66,6 +77,7 @@
                     font-size: 9px;
                     margin: 0 0 24px 0;
                     line-height: 10px;
+                    display: none;
                 }
 
                 span {
@@ -73,32 +85,67 @@
                 }
             }
 
-            button {
-                padding: 22px 37px;
-                border: none;
-                cursor: pointer;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 22px;
-                font-weight: 600;
-                font-size: 16px;
-                min-width: 243px;
-                line-height: 22px;
-                background: #B8D895;
-
+            .btn-container-txt{
                 @include breakpoint("max-sm") {
-                    padding: 10px 40px;
-                    font-weight: 600;
-                    font-size: 12px;
-                    min-width: auto;
-                    line-height: 12px;
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                &>.text-autor{
+                    display: none;
+                    font-weight: 800;
+                    font-size: 24px;
+                    line-height: 60px;
+                    margin: 0 0 15px 0;
+                    color: #FFFFFF;
+
+                    @include breakpoint("max-sm") {
+                        display: block;
+                        font-weight: 800;
+                        font-size: 14px;
+                        margin: 0 0 24px 0;
+                        color: #FFFFFF;
+                        line-height: 10px;
                 }
 
                 span {
-                    display: block;
                     font-weight: 400;
-                    font-size: 8px;
-                    line-height: 14px;
+                }
+                }
+                button {
+                    padding: 20px 37px;
+                    border: 1px solid #B8D895;
+                    border-radius: 9999px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 22px;
+                    font-weight: 600;
+                    color: white;
+                    min-width: 243px;
+                    line-height: 22px;
+                    background: transparent;
+    
+                    @include breakpoint("max-sm") {
+                        padding: 10px 20px;
+                        font-weight: 600;
+                        font-size: 15px;
+                        min-width: auto;
+                        line-height: 12px;
+                    }
+    
+                    span {
+                        display: block;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 14px;
+    
+                        @include breakpoint("max-sm") {
+                            font-size: 7px;
+                        }
+                    }
                 }
             }
 
@@ -106,14 +153,15 @@
                 position: relative;
                 font-weight: 400;
                 font-size: 30px;
-                line-height: 43px;
+                line-height: 1.5rem;
                 padding-left: 35px;
                 color: #fff;
 
                 @include breakpoint("max-sm") {
-                    font-weight: 400;
-                    font-size: 11px;
-                    padding-left: 15px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    padding-left: 1.5rem;
+                  
                 }
 
                 &::before {
@@ -122,13 +170,13 @@
                     left: 0;
                     content: "“";
                     font-family: "Montserrat", sans-serif;
-                    font-size: 80px;
+                    font-size: 60px;
                     line-height: 43px;
                     color: #fff;
 
                     @include breakpoint("max-sm") {
                         font-weight: 400;
-                        font-size: 11px;
+                        font-size: 20px;
                     }
                 }
             }

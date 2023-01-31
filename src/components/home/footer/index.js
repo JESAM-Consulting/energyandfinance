@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./footer.scss";
-import FooterLogo from "../../../assets/logo/logo.webp";
+import FooterLogo from "../../../assets/logo/logoFooter.svg";
 import EmailIcon from "../../../assets/icons/email.svg";
 import MobileIcon from "../../../assets/icons/mobile.svg";
 import FacebookIcon from "../../../assets/icons/facebook.svg";
@@ -41,7 +41,7 @@ export default function Footer() {
                 <img src={FooterLogo} alt="FooterLogo" />
               </div>
               <div className="first-section-mobile">
-           <p>Rendsburger Straße 14 30659 Hannover</p>
+                <p>Rendsburger Straße 14 30659 Hannover</p>
                 <div className="icon-alignment">
                   <div>
                     <img src={FacebookIcon} alt="FacebookIcon" />
@@ -120,8 +120,7 @@ export default function Footer() {
                         height="12"
                         viewBox="0 0 7 12"
                         fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M0.325865 1.02429C0.11715 1.22127 -4.47227e-07 1.48773 -4.35177e-07 1.76547C-4.23127e-07 2.04322 0.11715 2.30968 0.325865 2.50665L4.29283 6.28089L0.325865 10.0026C0.11715 10.1995 -5.76987e-08 10.466 -4.56486e-08 10.7437C-3.35985e-08 11.0215 0.11715 11.2879 0.325865 11.4849C0.430041 11.5835 0.553981 11.6617 0.690538 11.715C0.827095 11.7684 0.973566 11.7959 1.1215 11.7959C1.26943 11.7959 1.4159 11.7684 1.55246 11.715C1.68902 11.6617 1.81296 11.5835 1.91713 11.4849L6.66853 7.02733C6.77356 6.92959 6.85693 6.81332 6.91382 6.6852C6.97071 6.55709 7 6.41968 7 6.28089C7 6.1421 6.97071 6.00469 6.91382 5.87658C6.85693 5.74846 6.77356 5.63219 6.66853 5.53445L1.91713 1.02429C1.81296 0.925755 1.68902 0.847544 1.55246 0.794169C1.4159 0.740795 1.26943 0.713314 1.1215 0.713314C0.973565 0.713314 0.827095 0.740795 0.690538 0.794169C0.553981 0.847544 0.43004 0.925755 0.325865 1.02429Z"
                           fill="#333333"

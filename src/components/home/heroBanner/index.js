@@ -16,7 +16,7 @@ export default function HeroBanner() {
           <div className="grid">
             <div className="grid-items">
               <div className="text-style">
-                <h4>Werde</h4>
+                {/* <h4>Werde</h4> */}
                 <div className="button-rigth-alignment">
                   <button>
                     Energy Guide <br /> <span>(m/w/d)</span>
@@ -38,18 +38,17 @@ export default function HeroBanner() {
               <div className="image-center-alignment">
                 <iframe
                   src="https://player.vimeo.com/video/793921345?h=1b52db2d7c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
-                  allowfullscreen
-                  title="Energy &amp;amp; Finance Werbevideo_CUT4"
-                ></iframe>
+                  allowFullScreen
+                  title="Energy &amp;amp; Finance Werbevideo_CUT4"></iframe>
               </div>
               <div className="video-text-style">
                 <h6>Deine Karriere als Financial Guide starten</h6>
                 <div className="icon-text">
                   <img src={LongArrow} alt="LongArrow" />
                   <span onClick={() => setModalOpen(!modalOpen)}>
-                    Jetzt bewerben
+                    Jetzt bewerben (ohne Lebenslauf in 30 Sek.)
                   </span>
                 </div>
               </div>

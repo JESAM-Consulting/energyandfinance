@@ -40,6 +40,7 @@
           display: flex;
           align-items: center;
           gap: 18px;
+
           cursor: pointer;
 
           span {
@@ -52,6 +53,12 @@
               font-weight: 700;
               font-size: 12px;
               line-height: 30px;
+            }
+          }
+
+          &>img{
+            @include breakpoint('max-sm'){
+              max-width: 2rem;
             }
           }
         }
@@ -144,8 +151,10 @@
           line-height: 52px;
           text-align: center;
           background: #080917;
-          -webkit-clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
-          clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+          border-radius: 99999px;
+
+          // -webkit-clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+          // clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
           border: none;
           cursor: pointer;
           color: #93c45e;
@@ -160,8 +169,12 @@
             }
           }
           @include breakpoint("max-sm") {
+            -webkit-clip-path:none;
+            clip-path:none;
+            border-radius: 99999px;
             font-weight: 500;
-            width: 100%;
+            width: 80%;
+            margin: 0 auto 10px;
             font-size: 20px;
             line-height: 30px;
           }

@@ -6,12 +6,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 24px 0;
+
     .logo {
         img {
             max-width: 207px;
             object-fit: cover;
+
             @include breakpoint("max-sm") {
-                max-width: 128px;
+                max-width: 190px;
             }
         }
     }
@@ -21,7 +23,7 @@
             font-size: 20px;
             line-height: 22px;
             background: #93C45E;
-            padding: 14px 30px;
+            padding: 12px 30px;
             border: none;
             cursor: pointer;
             color: #fff;
@@ -37,6 +39,10 @@
                 line-height: 16px;
                 display: block;
                 font-weight: 400!important;
+
+                @include breakpoint("max-sm"){
+                    display: none;
+                }
             }
         }
     }

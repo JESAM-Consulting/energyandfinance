@@ -10,22 +10,23 @@ export default function Header() {
 
   return (
     <div>
-        <div className="energy-header">
-          <div className="new-container">
-            <div className="new-header-alignment">
-              <div className="logo">
-                <img src={Logo} alt="Logo"/>
-              </div>
+      <div className="energy-header">
+        <div className="new-container">
+          <div className="new-header-alignment">
+            <div className="logo">
+              <img src={Logo} alt="Logo" />
+            </div>
+            <div>
               <div className="button">
-              
-                <button onClick={() => setModalOpen(!modalOpen)}>Jetzt bewerben
-                <span>(ohne Lebenslauf in 30 Sek.)</span>
+                <button onClick={() => setModalOpen(!modalOpen)}>
+                  Jetzt bewerben
+                  <span>(ohne Lebenslauf in 30 Sek.)</span>
                 </button>
-             
               </div>
             </div>
           </div>
         </div>
+      </div>
       {modalOpen && (
         <ContactModal
           setModalOpen={setModalOpen}
