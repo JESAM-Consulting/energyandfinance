@@ -37,8 +37,14 @@ export default function ClientSection() {
                 zu gestalten.
               </p>
               <div className="mobile-button-show">
-                <button>Jetzt bewerben <br/> <span>(ohne Lebenslauf in 30 Sek.)</span> </button>
+                <button onClick={() => setModalOpen(!modalOpen)}>Jetzt bewerben <br/> <span>(ohne Lebenslauf in 30 Sek.)</span> </button>
               </div>
+            </div>
+            <div className="text-grid-items">
+              <button onClick={() => setModalOpen(!modalOpen)}>
+              Jetzt bewerben
+              <span>(ohne Lebenslauf in 30 Sek.)</span>
+              </button>
             </div>
           </div>
         </div>

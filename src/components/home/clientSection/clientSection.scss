@@ -41,7 +41,7 @@
 
     .text-grid {
         display: grid;
-        grid-template-columns: 34px 1fr;
+        grid-template-columns: 34px 1fr 243px;
         gap: 24px;
 
 
@@ -50,8 +50,35 @@
             gap: 5px;
         }
 
+        .text-grid-items:last-child {
+            display: flex;
+            align-items: center;
 
+            button {
+                font-weight: 600;
+                font-size: 16px;
+                padding: 21px;
+                width: 100%;
+                line-height: 22px;
+                display: block;
+                color: #0B0C0E;
+                background-color: #fff;
+                border: none;
+                cursor: pointer;
+                span {
+                    font-weight: 400;
+                font-size: 8px;
+                display: block;
+                line-height: 14px;
+                }
+            }
+
+            @include breakpoint("max-sm") {
+                display: none;
+            }
+        }
         .text-grid-items {
+       
             img {
                 @include breakpoint("max-sm") {
                     max-width: 20px;
