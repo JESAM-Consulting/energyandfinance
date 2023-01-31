@@ -11,7 +11,7 @@ export default function ClientSection() {
   return (
     <div>
       <div className="new-client-banner-alignment">
-        <div className="white-button"></div>
+      
         <div className="new-container-3">
           <div className="text-grid">
             <div className="text-grid-items">
