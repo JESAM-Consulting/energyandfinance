@@ -18,7 +18,11 @@
     /****  floating-Lable style start ****/
     .floating-label {
       position: relative;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
+
+      @include breakpoint("max-sm") {
+        margin-bottom: 15px;
+      }
     }
 
     .floating-input,
@@ -44,8 +48,8 @@
     label {
       color: #000;
       font-weight: 300;
-      font-size: 12px;
-      line-height: 16px;
+      font-size: 16px;
+      line-height: 19px;
       font-weight: normal;
       position: absolute;
       pointer-events: none;
@@ -124,7 +128,7 @@
     }
 
     .modal-header {
-      padding: 22px 50px;
+      padding: 21px 27px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -139,7 +143,9 @@
       }
       div:last-child {
         img {
-          max-width: 27px;
+          @include breakpoint("max-sm") {
+            max-width: 30px;
+          }
         }
       }
       div + div {
@@ -160,7 +166,7 @@
 
     .checkbox-content-alignment {
       display: flex;
-      padding: 0 0 10px 0;
+      padding: 10px 0 0 0;
       align-items: center;
 
       h5 {
@@ -180,7 +186,7 @@
     }
 
     .modal-body {
-      padding: 20px 50px;
+      padding: 0 35px 20px;
 
       @include breakpoint("max-sm") {
         padding: 20px 30px;
@@ -306,7 +312,7 @@
       }
 
       .text-style {
-        padding: 0 0 10px 0;
+        padding: 0 0 0 0;
 
         h1 {
           font-style: normal;
@@ -324,10 +330,9 @@
           }
         }
         p {
-          font-weight: 300;
-          max-width: 318px;
-          font-size: 12px;
-          line-height: 15px;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 19px;
           /* or 125% */
           color: #000000;
 
@@ -336,7 +341,7 @@
           }
         }
         h6 {
-          font-weight: 300;
+          font-weight: 400;
           font-size: 16px;
           line-height: 20px;
           /* identical to box height */

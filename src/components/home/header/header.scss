@@ -8,6 +8,8 @@
     padding: 24px 0;
     .logo {
         img {
+            max-width: 207px;
+            object-fit: cover;
             @include breakpoint("max-sm") {
                 max-width: 125px;
             }

@@ -14,13 +14,13 @@
 
     .sec-modal-box {
         background-color: #fff;
-        width: 455px;
+        width: 594px;
 
         @include breakpoint("max-sm") {
             width: calc(100% - 60px);
         }
         .modal-body {
-            padding: 38px 50px 38px 50px;
+            padding: 48px 35px 89px;
 
             @include breakpoint("max-sm") {
                 padding: 20px 30px 50px 30px;
@@ -73,7 +73,7 @@
 
         }
         .modal-header {
-            padding: 22px 50px;
+            padding: 21px 27px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -98,7 +98,9 @@
 
             div:last-child {
                 img {
-                    max-width: 27px;
+                    @include breakpoint("max-sm") {
+                        max-width: 30px;
+                    }
                 }
             }
 

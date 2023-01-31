@@ -53,7 +53,9 @@ export default function WirSection() {
                 Administration, Service, CRM und Abrechnung unterstützt, bilden
                 wir ein starkes Team.
               </p>
-              <button onClick={() => setModalOpen(!modalOpen)}>Mehr zu Energy & Finance erfahren</button>
+              <a href="https://www.energyfinance.de/"  target="_blank">
+                <button>Mehr zu Energy & Finance erfahren</button>
+              </a>
             </div>
           </div>
         </div>

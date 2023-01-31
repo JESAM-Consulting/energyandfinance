@@ -191,6 +191,12 @@ export default function ContactModal(props) {
                   </div>
                 </div>
                 
+               
+                <div className="ab-button">
+                  <button
+                   onClick={(e) => submitContact(e)}
+                   >Absenden</button>
+                </div>
                 <div className="checkbox-content-alignment">
                   <div style={{ display: "flex", marginRight: "2px" }}>
                     <input
@@ -211,90 +217,7 @@ export default function ContactModal(props) {
                     {errors?.check1}
                   </span>
                 )}
-                <div className="ab-button">
-                  <button
-                   onClick={(e) => submitContact(e)}
-                   >Absenden</button>
-                </div>
-                {/* <form>
-                  <div className="input">
-                    <input
-                      type="text"
-                      placeholder="Vorname"
-                      id="fname"
-                      name="fname"
-                      value={inputValue?.fname}
-                      onChange={(e) => {
-                        handleOnChange(e);
-                      }}
-                    />
-                    <span style={{ color: "#d92c2c", fontSize: "12px" }}>
-                      {errors?.fname}
-                    </span>
-
-                    <input
-                      type="text"
-                      placeholder="Nachname"
-                      id="lname"
-                      name="lname"
-                      value={inputValue?.lname}
-                      onChange={(e) => {
-                        handleOnChange(e);
-                      }}
-                    />
-                    <span style={{ color: "#d92c2c", fontSize: "12px" }}>
-                      {errors?.lname}
-                    </span>
-
-                    <input
-                      type="text"
-                      placeholder="Postleitzahl"
-                      id="postalCode"
-                      name="postalCode"
-                      value={inputValue?.postalCode}
-                      onChange={(e) => {
-                        handleOnChange(e);
-                      }}
-                      onKeyPress={bindInput}
-                    />
-                    <span style={{ color: "#d92c2c", fontSize: "12px" }}>
-                      {errors?.postalCode}
-                    </span>
-
-                    <input
-                      type="text"
-                      placeholder="Email"
-                      id="email"
-                      name="email"
-                      value={inputValue?.email}
-                      onChange={(e) => {
-                        handleOnChange(e);
-                      }}
-                    />
-                    <span style={{ color: "#d92c2c", fontSize: "12px" }}>
-                      {errors?.email}
-                    </span>
-
-                    <input
-                      type="text"
-                      placeholder="Telefon"
-                      id="phone"
-                      name="phone"
-                      value={inputValue?.phone}
-                      onChange={(e) => {
-                        handleOnChange(e);
-                      }}
-                      onKeyPress={bindInput}
-                    />
-
-                    <span style={{ color: "#d92c2c", fontSize: "12px" }}>
-                      {errors?.phone}
-                    </span>
-                  </div>
-                  <div className="ab-button">
-                    <button onClick={(e) => submitContact(e)}>Absenden</button>
-                  </div>
-                </form> */}
+          
 
               </div>
             </div>
