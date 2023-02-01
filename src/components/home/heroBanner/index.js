@@ -18,7 +18,10 @@ export default function HeroBanner() {
               <div className="text-style">
                 {/* <h4>Werde</h4> */}
                 <div className="button-rigth-alignment">
-                  <button>
+                  <button
+                    onClick={() => {
+                      setModalOpen(!modalOpen);
+                    }}>
                     Energy Guide <br /> <span>(m/w/d)</span>
                   </button>
                 </div>
