@@ -137,11 +137,9 @@ export default function Footer() {
       <div className="footer-last-chiild-sec">
         <div className="container-md-9">
           <div className="footer-link-alignment">
-            {/* <NavLink to="/impressum">Impressum</NavLink> */}
-            <a>Impressum</a>
+            <NavLink to="/impressum">Impressum</NavLink>
             <a>|</a>
-            {/* <NavLink to="/datenschutz">Datenschutz</NavLink> */}
-            <a>Datenschutz</a>
+            <NavLink to="/datenschutzerklaerung">Datenschutz</NavLink>
           </div>
           <p>
             Copyright © 2022 JESAM Consulting GmbH. Alle Rechte vorbehalten.
