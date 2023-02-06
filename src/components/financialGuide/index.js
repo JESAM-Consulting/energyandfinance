@@ -67,7 +67,7 @@ export default function FinancialGuide(props) {
                 </div>
                 <div className="new-f">
                   <div className="text-style">
-                    <p>Deine Karriere als Financial Guide starten</p>
+                    <p>Deine Karriere als Energy Guide starten</p>
                     <div
                       className="arrow-text-center-alignment"
                       onClick={() => setModalOpen(true)}
