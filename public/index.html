@@ -14,7 +14,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <meta name="facebook-domain-verification" content="lrmh4c3ulzs2wzrjmv4ae0exnou56l" />
+    <meta
+      name="facebook-domain-verification"
+      content="b6a7dgmuvbtuz8xcep9jfw81me5u0v"
+    />
     <meta name="theme-color" content="#000000" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Sofia+Sans:wght@400;500;600&display=swap"
@@ -32,7 +35,7 @@
       name="description"
       content="Ihr unabhängiger Anbieter für Erneuerbare Energien in Deutschland"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.svg" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -68,4 +71,38 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "6045683122121168");
+    fbq("track", "PageView");
+  </script>
+  <noscript
+    ><img
+      height="1"
+      width="1"
+      style="display: none;"
+      src="https://www.facebook.com/tr?id=6045683122121168&ev=PageView&noscript=1"
+  /></noscript>
 </html>
