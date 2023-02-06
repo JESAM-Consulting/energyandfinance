@@ -32,13 +32,13 @@ export default function ContactModal(props) {
     let isFormValid = true;
     let errors = {};
 
-    if (!inputValue?.fname?.trim() || inputValue?.fname === "") {
+    if (!inputValue?.firstName?.trim() || inputValue?.firstName === "") {
       isFormValid = false;
-      errors["fname"] = "*Bitte überprüfen Sie ihre Eingabe.";
+      errors["firstName"] = "*Bitte überprüfen Sie ihre Eingabe.";
     }
-    if (!inputValue?.lname?.trim() || inputValue?.lname === "") {
+    if (!inputValue?.lastName?.trim() || inputValue?.lastName === "") {
       isFormValid = false;
-      errors["lname"] = "*Bitte überprüfen Sie ihre Eingabe.";
+      errors["lastName"] = "*Bitte überprüfen Sie ihre Eingabe.";
     }
 
     if (!inputValue?.postalCode || inputValue?.postalCode === "") {
@@ -114,23 +114,23 @@ export default function ContactModal(props) {
                 <div class="floating-form">
                   <div class="floating-label">
                     <input class="floating-input" type="text" placeholder=" "
-                     id="fname"
-                     name="fname"
-                     value={inputValue?.fname}
+                     id="firstName"
+                     name="firstName"
+                     value={inputValue?.firstName}
                      onChange={(e) => {
                        handleOnChange(e);
                      }} />
                     <span class="highlight"></span>
                     <label>Vorname</label>
                     <span style={{ color: "#d92c2c", fontSize: "12px" }}>
-                      {errors?.fname}
+                      {errors?.firstName}
                     </span>
                   </div>
                   <div class="floating-label">
                     <input class="floating-input" type="text" placeholder=" "
-                    id="lname"
-                    name="lname"
-                    value={inputValue?.lname}
+                    id="lastName"
+                    name="lastName"
+                    value={inputValue?.lastName}
                     onChange={(e) => {
                       handleOnChange(e);
                     }}
@@ -138,7 +138,7 @@ export default function ContactModal(props) {
                     <span class="highlight"></span>
                     <label>Nachname</label>
                     <span style={{ color: "#d92c2c", fontSize: "12px" }}>
-                      {errors?.lname}
+                      {errors?.lastName}
                     </span>
                   </div>
                   <div class="floating-label">
