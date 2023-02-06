@@ -47,7 +47,7 @@ export default function HeroBanner() {
                   title="Energy &amp;amp; Finance Werbevideo_CUT4"></iframe>
               </div>
               <div className="video-text-style">
-                <h6>Deine Karriere als Financial Guide starten</h6>
+                <h6>Deine Karriere als Energy Guide starten</h6>
                 <div className="icon-text">
                   <img src={LongArrow} alt="LongArrow" />
                   <span onClick={() => setModalOpen(!modalOpen)}>
