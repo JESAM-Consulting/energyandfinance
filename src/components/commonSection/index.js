@@ -24,10 +24,7 @@ export default function CommonSection() {
                   <img src={IconDesign} alt="IconDesign" />
                 </div>
                 <h2>Voll-/Teilzeit und selbständig</h2>
-                <p>
-                  flexible Arbeitszeiten keine Kernzeiten unbefristete
-                  Einstellung nach Probezeit
-                </p>
+                <p>flexible Arbeitszeiten keine Kernzeiten</p>
               </div>
               <div className="sub-grid-items">
                 <div className="icon-center-alignment">
